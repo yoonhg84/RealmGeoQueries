@@ -204,11 +204,11 @@ public extension CLLocationCoordinate2D {
      - returns: GeoBox struct
      */
     func geoBox(radius: Double) -> GeoBox {
-        #if swift(>=4.2)
-        return MKCoordinateRegion(center: self, latitudinalMeters: radius * 2.0, longitudinalMeters: radius * 2.0).geoBox
-        #else
-        return MKCoordinateRegionMakeWithDistance(self, radius * 2.0, radius * 2.0).geoBox
-        #endif
+        return MKCoordinateRegion(
+            center: self,
+            latitudinalMeters: CLLocationDistance(radius * 2.0),
+            longitudinalMeters: CLLocationDistance(radius * 2.0)
+        ).geoBox
     }
     
 }
