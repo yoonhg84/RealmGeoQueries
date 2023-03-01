@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D6F226529AF2BC4002B3672 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1D6F226429AF2BC4002B3672 /* RealmSwift */; };
+		1D6F226729AF2BE6002B3672 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1D6F226629AF2BE6002B3672 /* RealmSwift */; };
 		4B1ABE061F84F40700566726 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1ABE051F84F40700566726 /* MapKit.framework */; };
 		4B1ABE071F84F74900566726 /* RealmGeoQueriesPoints.realm in Resources */ = {isa = PBXBuildFile; fileRef = 4B1F42481F84BA7C00ABFE1B /* RealmGeoQueriesPoints.realm */; };
 		4B1F422B1F84B76D00ABFE1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1F422A1F84B76D00ABFE1B /* AppDelegate.swift */; };
@@ -15,15 +17,11 @@
 		4B1F423F1F84B89B00ABFE1B /* BoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1F423D1F84B89B00ABFE1B /* BoxViewController.swift */; };
 		4B1F42461F84BA4900ABFE1B /* RadiusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B1F42441F84BA4900ABFE1B /* RadiusViewController.xib */; };
 		4B1F42471F84BA4900ABFE1B /* RadiusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1F42451F84BA4900ABFE1B /* RadiusViewController.swift */; };
-		4B1F42511F84C5D900ABFE1B /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1F424F1F84C5D900ABFE1B /* RealmSwift.framework */; };
-		4B1F42521F84C5D900ABFE1B /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1F42501F84C5D900ABFE1B /* Realm.framework */; };
 		4B1F42561F84D86A00ABFE1B /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1F42541F84D7D000ABFE1B /* Point.swift */; };
 		4B1F42571F84D86C00ABFE1B /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1F42551F84D7D000ABFE1B /* Annotation.swift */; };
 		4BC1E8BF1F84FDB900AF3BE0 /* GeoQueries.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BC1E8BD1F84FDB900AF3BE0 /* GeoQueries.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4BC1E8C21F84FDB900AF3BE0 /* GeoQueries.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BC1E8BB1F84FDB900AF3BE0 /* GeoQueries.framework */; };
 		4BC1E8C31F84FDB900AF3BE0 /* GeoQueries.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BC1E8BB1F84FDB900AF3BE0 /* GeoQueries.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4BC1E8C91F84FE0D00AF3BE0 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1F42501F84C5D900ABFE1B /* Realm.framework */; };
-		4BC1E8CA1F84FE0D00AF3BE0 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1F424F1F84C5D900ABFE1B /* RealmSwift.framework */; };
 		4BC1E8D21F85529D00AF3BE0 /* RealmGeoQueriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC1E8D11F85529D00AF3BE0 /* RealmGeoQueriesTests.swift */; };
 		4BC1E8D91F85539B00AF3BE0 /* GeoQueries.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BC1E8BB1F84FDB900AF3BE0 /* GeoQueries.framework */; };
 		4BC1E8DA1F8553A600AF3BE0 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1F42501F84C5D900ABFE1B /* Realm.framework */; };
@@ -93,10 +91,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B1F42511F84C5D900ABFE1B /* RealmSwift.framework in Frameworks */,
 				4BC1E8C21F84FDB900AF3BE0 /* GeoQueries.framework in Frameworks */,
 				4B1ABE061F84F40700566726 /* MapKit.framework in Frameworks */,
-				4B1F42521F84C5D900ABFE1B /* Realm.framework in Frameworks */,
+				1D6F226529AF2BC4002B3672 /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,8 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BC1E8C91F84FE0D00AF3BE0 /* Realm.framework in Frameworks */,
-				4BC1E8CA1F84FE0D00AF3BE0 /* RealmSwift.framework in Frameworks */,
+				1D6F226729AF2BE6002B3672 /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,7 +239,6 @@
 				4B1F42231F84B76D00ABFE1B /* Sources */,
 				4B1F42241F84B76D00ABFE1B /* Frameworks */,
 				4B1F42251F84B76D00ABFE1B /* Resources */,
-				4B1F424D1F84C55E00ABFE1B /* ShellScript */,
 				4BC1E8C71F84FDB900AF3BE0 /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -252,6 +247,9 @@
 				4BC1E8C11F84FDB900AF3BE0 /* PBXTargetDependency */,
 			);
 			name = RealmGeoQueries;
+			packageProductDependencies = (
+				1D6F226429AF2BC4002B3672 /* RealmSwift */,
+			);
 			productName = RealmGeoQueries;
 			productReference = 4B1F42271F84B76D00ABFE1B /* RealmGeoQueries.app */;
 			productType = "com.apple.product-type.application";
@@ -270,6 +268,9 @@
 			dependencies = (
 			);
 			name = GeoQueries;
+			packageProductDependencies = (
+				1D6F226629AF2BE6002B3672 /* RealmSwift */,
+			);
 			productName = GeoQueries;
 			productReference = 4BC1E8BB1F84FDB900AF3BE0 /* GeoQueries.framework */;
 			productType = "com.apple.product-type.framework";
@@ -334,6 +335,9 @@
 				Base,
 			);
 			mainGroup = 4B1F421E1F84B76D00ABFE1B;
+			packageReferences = (
+				1D6F226329AF2BC4002B3672 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 4B1F42281F84B76D00ABFE1B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -372,26 +376,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		4B1F424D1F84C55E00ABFE1B /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
-			);
-			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RealmSwift.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Realm.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4B1F42231F84B76D00ABFE1B /* Sources */ = {
@@ -545,7 +529,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -561,7 +546,11 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = RealmGeoQueries/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mhergon.RealmGeoQueries;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -580,7 +569,11 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = RealmGeoQueries/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mhergon.RealmGeoQueries;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -605,8 +598,12 @@
 				);
 				INFOPLIST_FILE = GeoQueries/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mhergon.GeoQueries;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -634,8 +631,12 @@
 				);
 				INFOPLIST_FILE = GeoQueries/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mhergon.GeoQueries;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -657,7 +658,11 @@
 				);
 				INFOPLIST_FILE = RealmGeoQueriesTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mhergon.RealmGeoQueriesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -677,7 +682,11 @@
 				);
 				INFOPLIST_FILE = RealmGeoQueriesTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mhergon.RealmGeoQueriesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -726,6 +735,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1D6F226329AF2BC4002B3672 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1D6F226429AF2BC4002B3672 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1D6F226329AF2BC4002B3672 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		1D6F226629AF2BE6002B3672 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1D6F226329AF2BC4002B3672 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4B1F421F1F84B76D00ABFE1B /* Project object */;
 }
