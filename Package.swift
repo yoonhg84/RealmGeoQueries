@@ -11,7 +11,7 @@ let package = Package(
             targets: ["GeoQueries"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/realm/realm-cocoa.git", from: "4.3.0"),
+        .package(url: "https://github.com/realm/realm-swift.git", from: "10.36.0"),
     ],
     targets: [
         .target(
